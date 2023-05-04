@@ -40,11 +40,13 @@ function draw() {
     balloon.addAnimation("hotAirBalloon", balloonImage2);
     //write code to move air balloon in up direction
     balloon.y = balloon.y - 1
+    balloon.scale = 0.8
   }
   else if (keyDown(DOWN_ARROW)) {
     balloon.addAnimation("hotAirBalloon", balloonImage2);
     //write code to move air balloon in down direction
     balloon.y = balloon.y + 1
+    balloon.scale = 0.3
   }
 
   drawSprites();
